@@ -4,8 +4,10 @@ generator client {
   engineType = "client"
 }
 
-datasource db {
+datasource db { 
   provider     = "postgresql"
+  url          = env("postgresql://postgres.gtqnpuoncnywjfljmsqc:kxm8jpv9NDA6ztb.rce@aws-us-east-2.pooler.supabase.com:6543/postgres")
+  directUrl    = env("postgresql://postgres.gtqnpuoncnywjfljmsqc:kxm8jpv9NDA6ztb.rce@aws-0-us-east-2.pooler.supabase.com:6543/postgres")
   relationMode = "prisma"
 }
 
